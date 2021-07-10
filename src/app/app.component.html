@@ -1,0 +1,403 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="https://maxv-lttvinh.github.io/CV/#page-top">
+        <span class="d-none d-lg-block">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../assets/css/hinhthe.jpg" alt="">
+        </span>
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger pointer"  [ngClass]="{'active': selectedItem == 'ABOUT'}" (click)="scroll($event,ABOUT)" id='ABOUT'>Thông tin cá nhân</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger pointer"  [ngClass]="{'active': selectedItem == 'EXPERIENCE'}"  (click)="scroll($event,EXPERIENCE)"  id='EXPERIENCE'>Kinh nghiệm</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger pointer"  [ngClass]="{'active': selectedItem == 'SKILLS'}"  (click)="scroll($event,SKILLS)" id='SKILLS'>Kỹ năng</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger pointer"  [ngClass]="{'active': selectedItem == 'AWARDS'}"  (click)="scroll($event,AWARDS)"  id='AWARDS'>Thành tích
+                    học tập</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger pointer"  [ngClass]="{'active': selectedItem == 'CONTACT'}"  (click)="scroll($event,CONTACT)"  id='CONTACT'>Liên hệ</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid p-0">
+    <!--====================================================
+                                ABOUT
+        ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" #ABOUT>
+        <div class="my-auto">
+            <!-- <img src="img/hinhthe.jpg" class="img-fluid mb-5" alt=""> -->
+            <h1 class="mb-0">
+                <span class="text-primary">Lê Trần</span> Thế Vinh
+            </h1>
+            <div class="subheading mb-5">
+                <b>Ngày sinh: </b>15/08/1997. <br>
+                <!-- <b>Mục tiêu:</b>Tìm được một môi trường làm việc và văn hóa công ty phù hợp với tính cách, mục tiêu
+                    phát triển của bản thân. <br> -->
+                <!-- <b>Nơi làm việc ưa thích:</b> TP. Hồ Chí Minh <br> -->
+                <!-- <b>Vị trí mong muốn:</b> Lập trình viên Back-End (ASP.NET/C#) <br>
+                    <b>Cấp bậc:</b> Junior <br> -->
+                <b>Mục tiêu 2 năm tới:</b> HOÀN THÀNH THẬT TỐT CÔNG VIỆC, TRAU DỒI THÊM KIẾN THỨC VỀ LẬP TRÌNH VÀ
+                HỌC THÊM CHỨNG CHỈ VỀ SYSTEM VÀ SECURITY.<br>
+                <b>Mục tiêu 5 năm tới:</b> FullStack Web Developer<p></p>
+            </div>
+            <p class="mb-5">
+            </p>
+            <ul class="list-inline list-social-icons mb-0">
+                <li class="list-inline-item">
+                    <a href="https://github.com/MaxV-LTTVinh" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <p></p>
+        </div>
+    </section>
+
+    <!--====================================================
+                                EXPERIENCE
+        ======================================================-->
+    <section class="resume-section p-3 p-lg-5 " #EXPERIENCE>
+        <div class="row my-auto" >
+            <div class="col-12">
+                <h2 class="  text-center">Kinh nghiệm</h2>
+                <div class="mb-5 heading-border"></div>
+            </div>
+            <div class="resume-item col-md-6 col-xl-6 col-sm-12 col-max-4">
+                <div class="card mx-0 p-4 mb-5"
+                    style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);height: calc(100% - 3rem);">
+                    <div class=" resume-content" style="height: calc(100% - 24px);">
+                        <h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i>Store Management</h4>
+                        <h5>Me</h5>
+                        <p><i>Template Full-stack: </i><br>
+                            - Front-end: Angular<br>
+                            - Back-end: .NET 5/EF Core/Dapper<br>
+                            - Database: MySQL.<br>
+                        </p>
+                        <p>Project: <a href="https://github.com/MaxV-Shared/Store-Management-DotNet-Angular"
+                                target="_blank">Store-Management-DotNet-Angular</a></p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">NaN</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-item col-md-6 col-xl-6 col-sm-12 col-max-4">
+                <div class="card mx-0 p-4 mb-5"
+                    style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);height: calc(100% - 3rem);">
+                    <div class=" resume-content" style="height: calc(100% - 24px);">
+                        <h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i>Routing</h4>
+                        <h5>INFODation</h5>
+                        <p><i>Thuật toán tìm đường thi công cáp điện: </i><br>
+                            - Back-end: .NET Core 3.1./EF Core/Dapper<br>
+                            - Database: PostgreSQL.<br>
+                            - Server: AWS.</p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">10/2020 - Present</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-item col-md-6 col-xl-6 col-sm-12 col-max-4">
+                <div class="card mx-0 p-4 mb-5"
+                    style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                    <div class=" resume-content" style="height: calc(100% - 24px);">
+                        <h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i> HRM WebApp</h4>
+                        <h5>Các trường đại học NEU/TTC/PNT/UEL</h5>
+                        <p><i>Website HRM (Chấm công, đánh giá, phân công giảng dạy) </i><br>
+                            .NET WebApi: <br>
+                            - Front-end: AngularJs/KnockoutJS/JQuery<br>
+                            - Back-end: .NET Framework 4.5/Nhibernate.<br>
+                            - Cơ sở dữ liệu: SQLServer.<br>
+                            - Server: Windows Server 2012/Azure.</p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">9/2019 - 10/2020</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-item col-md-6 col-xl-6 col-sm-12 col-max-4">
+                <div class="card mx-0 p-4 mb-5"
+                    style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21); height: calc(100% - 3rem);">
+                    <div class="resume-content" style="height: calc(100% - 24px);">
+                        <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i> Hotel Website</h4>
+                        <h5> TDA Solution</h5>
+                        <p>
+                            <i>Website quảng bá khách sạn</i><br>
+                            .NET/MVC: <br>
+                            - Front-end: JQuery/Bootstrap<br>
+                            - Back-end: .NET Framework 4.5/Entity Framework.<br>
+                            - Cơ sở dữ liệu: SQL Server.<br>
+                            - Server: Windows Server 2012.<br>
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">5/2019 - 9/2019</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-item col-md-6 col-xl-6 col-sm-12 col-max-4">
+                <div class="card mx-0 p-4 mb-5"
+                    style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21); height: calc(100% - 3rem);">
+                    <div class="resume-content" style="height: calc(100% - 24px);">
+                        <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i> Phần mêm quản lý cafe</h4>
+                        <h5> Đồ án tốt nghiệp</h5>
+                        <p>
+                            <i>Phần mêm quản lý cafe</i><br>
+                            .NET/Winform: .NET Framework 4.5/ADO. <br>
+                            - Cơ sở dữ liệu: SQL Server.<br>
+                            - Server: Windows Server 2012.<br>
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">4/2019 - 6/2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+                                SKILLS
+        ======================================================-->
+    <section class="resume-section d-flex flex-column skill-cover"#SKILLS>
+        <div class="p-lg-5 p-3 ">
+            <h3 class="text-center text-white">Kỹ năng code</h3>
+            <div class="row text-center my-auto ">
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-item" style="height: 240px;">
+                        <i class="fa fa-css3 fa-5x"></i>
+                        <h2><span class="counter">70</span><span>%</span></h2>
+                        <p>CSS3</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-item" style="height: 240px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96"
+                            viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#2196f3">
+                                    <path
+                                        d="M0,37.625v96.75h172v-96.75zM10.75,48.375h150.5v75.25h-150.5zM64.5,64.5v29.5625c0,1.15479 -1.53271,2.6875 -2.6875,2.6875c-1.15479,0 -2.6875,-1.53271 -2.6875,-2.6875v-2.6875h-10.75v2.6875c0,7.43262 6.00489,13.4375 13.4375,13.4375c7.43262,0 13.4375,-6.00488 13.4375,-13.4375v-29.5625zM99.4375,64.5c-7.43261,0 -13.4375,6.00489 -13.4375,13.4375c0,7.43262 6.00489,13.4375 13.4375,13.4375c1.15479,0 2.6875,1.53271 2.6875,2.6875c0,1.6167 -0.62988,2.6875 -2.6875,2.6875c-1.97363,0 -2.28857,-0.41992 -2.35156,-0.50391c-0.06299,-0.08398 -0.33594,-0.41992 -0.33594,-1.67969h-10.75c0,3.04443 0.88184,6.4668 3.35938,9.07031c2.47754,2.60352 6.15185,3.86328 10.07813,3.86328c7.62158,0 13.4375,-6.4458 13.4375,-13.4375c0,-7.43261 -6.00488,-13.4375 -13.4375,-13.4375c-1.15479,0 -2.6875,-1.53271 -2.6875,-2.6875c0,-1.15479 1.53271,-2.6875 2.6875,-2.6875c1.42773,0 1.86865,0.33594 2.18359,0.67188c0.31494,0.33594 0.50391,0.90283 0.50391,1.51172h10.75c0,-3.17041 -1.15479,-6.40381 -3.52734,-8.90234c-2.37256,-2.49854 -5.96289,-4.03125 -9.91016,-4.03125z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <h2><span class="counter">65</span><span>%</span></h2>
+                        <p>JQuery</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-item" style="height: 240px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96"
+                            viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#2196f3">
+                                    <path
+                                        d="M86,21.15356l-62.55786,22.74927l11.22241,84.23633l51.33545,28.51269l51.33545,-28.52319l11.22241,-84.22583zM86,32.59644l50.75805,18.45557l-9.37475,70.30542l-41.3833,22.99072l-41.3833,-22.99072l-9.37476,-70.30542zM86,43l-32.25,75.25h10.75l6.92871,-16.125h29.14258l6.92871,16.125h10.75zM86,67.46045l0.10498,0.31494l3.7688,9.40625l6.06787,14.19336h-19.8833l6.06787,-14.19336l3.7688,-9.40625z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <h2><span class="counter">65</span><span>%</span></h2>
+                        <p>AngularJs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-item" style="height: 240px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96"
+                            viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#2196f3">
+                                    <path
+                                        d="M86,21.15356l-62.55786,22.74927l11.22241,84.23633l51.33545,28.51269l51.33545,-28.52319l11.22241,-84.22583zM86,32.59644l50.75805,18.45557l-9.37475,70.30542l-41.3833,22.99072l-41.3833,-22.99072l-9.37476,-70.30542zM86,43l-32.25,75.25h10.75l6.92871,-16.125h29.14258l6.92871,16.125h10.75zM86,67.46045l0.10498,0.31494l3.7688,9.40625l6.06787,14.19336h-19.8833l6.06787,-14.19336l3.7688,-9.40625z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <h2><span class="counter">65</span><span>%</span></h2>
+                        <p>Angular</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-item" style="height: 240px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#2196f3">
+                                    <path
+                                        d="M86,6.88c-2.45906,0 -4.91812,0.61813 -7.10844,1.85438l-57.9425,32.55906c-4.43438,2.48594 -7.18906,7.14875 -7.18906,12.1475v65.11813c0,4.99875 2.75469,9.66156 7.18906,12.1475l57.9425,32.55906c2.19031,1.23625 4.64937,1.85437 7.10844,1.85437c2.45906,0 4.91813,-0.61812 7.10844,-1.85437l57.9425,-32.54563c4.43438,-2.49937 7.18906,-7.16219 7.18906,-12.16094v-65.11813c0,-4.99875 -2.75469,-9.66156 -7.18906,-12.1475l-57.9425,-32.55906c-2.19031,-1.23625 -4.64937,-1.85438 -7.10844,-1.85438zM86,44.72c13.0075,0 25.03406,6.03344 32.82781,16.29969l-15.07688,8.73438c-4.52844,-4.95844 -10.965,-7.83406 -17.75094,-7.83406c-13.27625,0 -24.08,10.80375 -24.08,24.08c0,13.27625 10.80375,24.08 24.08,24.08c6.78594,0 13.2225,-2.87562 17.75094,-7.83406l15.07688,8.73438c-7.79375,10.26625 -19.82031,16.29969 -32.82781,16.29969c-22.76312,0 -41.28,-18.51687 -41.28,-41.28c0,-22.76312 18.51688,-41.28 41.28,-41.28zM120.4,68.8h6.88v6.88h6.88v-6.88h6.88v6.88h6.88v6.88h-6.88v6.88h6.88v6.88h-6.88v6.88h-6.88v-6.88h-6.88v6.88h-6.88v-6.88h-6.88v-6.88h6.88v-6.88h-6.88v-6.88h6.88zM127.28,82.56v6.88h6.88v-6.88z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <h2><span class="counter">85</span><span>%</span></h2>
+                        <p>C#</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-item" style="height: 240px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96"
+                            viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g id="original-icon" fill="#2196f3">
+                                    <path
+                                        d="M32.45673,0c-17.85637,0 -32.45673,14.60036 -32.45673,32.45673v107.08654c0,17.85637 14.60036,32.45673 32.45673,32.45673h107.08654c17.85637,0 32.45673,-14.60036 32.45673,-32.45673v-107.08654c0,-17.85637 -14.60036,-32.45673 -32.45673,-32.45673zM52.92308,65.53365c4.6256,0 7.93329,1.18871 9.92308,1.86058c0.67188,0 0.62019,0.82692 0.62019,0.82692l-1.86058,5.78846c0,0 -0.15504,0.82692 -0.82692,0.82692h-0.62019c-1.98978,-0.67187 -4.54808,-2.06731 -7.85577,-2.06731c-4.6256,0 -5.99519,2.60997 -5.99519,3.92788c0,2.63582 1.29207,4.00541 7.23558,5.99519c7.28726,2.63582 10.54327,6.66707 10.54327,12.61058c0,5.94351 -3.79868,13.23077 -15.71154,13.23077c-4.6256,0 -9.38041,-1.36959 -11.37019,-2.6875l-0.62019,-0.62019l2.06731,-5.99519c0,0 -0.05168,-0.62019 0.62019,-0.62019h0.62019c1.98978,1.31791 5.32332,2.6875 9.30288,2.6875c3.97957,0 6.61538,-2.11899 6.61538,-4.75481c0,-1.98978 -1.31791,-4.00541 -6.61538,-5.99519c-7.93329,-2.63581 -11.37019,-6.46033 -11.37019,-12.40385c0,-7.28726 6.04688,-12.61058 15.29808,-12.61058zM86.62019,65.53365c11.24099,0 19.22596,8.52765 19.22596,21.08654c0,8.60517 -3.35937,15.29808 -9.30288,18.60577c2.63582,0.67188 6.04688,1.18871 8.68269,1.86058c0,0 0.62019,0.15505 0.62019,0.82692v0.62019l-1.24038,5.16827c0,0.67188 -0.82692,0.82692 -0.82692,0.82692c-5.29747,-1.31791 -9.76803,-2.73918 -15.71154,-5.375c-0.67187,0 -1.36959,-0.62019 -2.6875,-0.62019c-9.2512,-0.67187 -18.60577,-7.39062 -18.60577,-21.29327c0,-13.23077 7.93329,-21.70673 19.84615,-21.70673zM112.04808,66.15385c0.15505,-0.07753 0.41346,0 0.41346,0h6.61538c0.67188,0 0.62019,0.62019 0.62019,0.62019v33.07692h15.91827c0.67188,0 0.62019,0.62019 0.62019,0.62019v6.61538h0.62019c0,0.67188 -0.62019,0.82692 -0.62019,0.82692h-23.77404c-0.67187,0 -0.62019,-0.82692 -0.62019,-0.82692v-40.3125c0,-0.33594 0.05169,-0.54267 0.20673,-0.62019zM86.62019,72.76923c-7.28726,0 -10.54327,7.23558 -10.54327,13.85096c0,7.93329 3.97957,13.85096 9.92308,13.85096c7.28726,0 10.54327,-7.23558 10.54327,-13.85096c0.67188,-6.61538 -2.63581,-13.85096 -9.92308,-13.85096z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <h2><span class="counter">70</span><span>%</span></h2>
+                        <p>SQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+                                AWARDS
+        ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards" #AWARDS>
+        <div class="row my-auto">
+            <div class="col-12">
+                <h2 class="  text-center">Thành tích học tập</h2>
+                <div class="mb-5 heading-border"></div>
+            </div>
+            <div class="main-award" id="award-box" style="min-width: 100%;">
+                <div class="award">
+                    <div class="award-icon"></div>
+                    <div class="award-content">
+                        <span class="date">09/2016 - 05/2019</span>
+                        <h5 class="title">Công nghệ thông tin - Đại học Nha Trang</h5>
+                        <p class="description">
+                            Chuyên ngành: Công Nghệ Thông Tin. <br>
+                            Bậc đào tạo: Cao đẳng <br>
+                            Điểm trung bình 3.07/4.0. <br>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="award">
+                    <div class="award-icon"></div>
+                    <div class="award-content">
+                        <span class="date">2018</span>
+                        <h5 class="title">Phần thưởng thành tích học sinh giỏi.</h5>
+                        <p class="description">
+                            Phần thưởng thành tích học sinh giỏi.
+                        </p>
+                    </div>
+                </div>
+                <div class="award">
+                    <div class="award-icon"></div>
+                    <div class="award-content">
+                        <span class="date">2019</span>
+                        <h5 class="title">Đạt giải 3 cuộc thi Database ngoại khóa.</h5>
+                        <p class="description">
+                            Thiệt kế Database cho phần mêm quản lý rạp chiếu phim.
+                        </p>
+                    </div>
+                </div>
+                <div class="award">
+                    <div class="award-icon"></div>
+                    <div class="award-content">
+                        <span class="date">2019</span>
+                        <h5 class="title">Đạt giải 2 cuộc thi Olympic tin học cấp trường.</h5>
+                        <p class="description">
+                            Cuộc thi lập trình C++.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+                            CONTACT
+    ======================================================-->
+    <section class="p-3 p-lg-5 d-flex flex-column" #CONTACT>
+        <div class="row my-auto mt-5" id="contact">
+            <div class="col-md-3 col-sm-12">
+                <div class="contact-cont2">
+                    <div class="contact-phone contact-box-desc text-center">
+                        <h3><i class="fa fa-phone cl-atlantis fa-2x"></i> Phone </h3>
+                        <p>0905089893</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="contact-cont2">
+                    <div class="contact-phone contact-box-desc text-center">
+                        <h3><i class="fa fa-skype cl-atlantis fa-2x"></i> Skype </h3>
+                        <p>thevinh.it.kh.1997</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="contact-cont2">
+                    <div class="contact-mail contact-box-desc text-center">
+                        <h3><i class="fa fa-envelope-o cl-atlantis fa-2x"></i> Email</h3>
+                        <address class="address-details-f">
+                            <a href="mailto:thevinh.it.kh.1997@gmail.com" class="">thevinh.it.kh.1997@gmail.com</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="contact-cont2">
+                    <div class="contact-add contact-box-desc text-center">
+                        <h3><i class="fa fa-map-marker cl-atlantis fa-2x"></i> Address</h3>
+                        <p>Nha Trang, Khánh Hoà, Việt Nam<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="lbdictex_find_popup" class="lbexpopup hidden" style="position: absolute; top: 0px; left: 0px;">
+    <div class="lbexpopup_top">
+        <h2 class="fl popup_title">&nbsp;</h2>
+        <ul>
+            <li><a class="close_main popup_close" href="https://maxv-lttvinh.github.io/CV/#">&nbsp;</a></li>
+        </ul>
+        <div class="clr"></div>
+    </div>
+    <div class="popup_details"></div>
+    <div class="popup_powered">abc</div>
+</div>
+<div id="lbdictex_ask_mark" class="hidden" style="position: absolute; top: 0px; left: 0px;" #EXPERIENCE>
+    <a class="lbdictex_ask_select" href="https://maxv-lttvinh.github.io/CV/#">&nbsp;</a>
+</div>
