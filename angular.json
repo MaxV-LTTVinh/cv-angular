@@ -28,14 +28,14 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/css/hinhthe.jpg",
+              "src/assets/css/bg-stats.jpg"
             ],
             "styles": [
               "src/styles.scss",
               "src/assets/css/style.css",
-              "./node_modules/font-awesome/css/font-awesome.css",
-              "./src/assets/css/hinhthe.jpg",
-              "src/assets/css/bg-stats.jpg"
+              "./node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },
